@@ -1,0 +1,37 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <meta http-equiv="Content-Security-Policy" content="default-src * data: gap: content: https://ssl.gstatic.com; style-src * 'unsafe-inline'; script-src * 'unsafe-inline' 'unsafe-eval'">
+    <script src="components/loader.js"></script>
+    <link rel="stylesheet" href="components/loader.css">
+    <link rel="stylesheet" href="css/style.css">
+    <!--Imports for OnsenUI-->
+    <link rel="stylesheet" href="https://unpkg.com/onsenui/css/onsenui.css">
+    <link rel="stylesheet" href="https://unpkg.com/onsenui/css/onsen-css-components.min.css">
+</head>
+<body>
+	<header id="header"> 
+        <h1 id="title">Game of Life!</h1>
+        <p id="description">The <b>Game of Life</b> is a cellular automaton devised by the British mathematician John Horton Conway in 1970.</p>
+    </header>
+    <div id="gridDiv">
+        <table id="grid"></table>
+    </div>
+    <ons-bottom-toolbar id="toolbar">
+        <div id="buttons">
+            <ons-button id="playbtn">Play</ons-button>
+            <ons-button id="clearbtn">Clear</ons-button>
+            <ons-button id="randombtn">Random</ons-button>
+        </div>
+    </ons-bottom-toolbar>
+
+    <!--Import for OnsenUI-->
+    <script src="https://unpkg.com/onsenui/js/onsenui.min.js"></script>
+    <!--Import for JQuery-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <!--Import for script file-->
+    <script src="./javascript/script.js"></script>
+</body>
+</html>
